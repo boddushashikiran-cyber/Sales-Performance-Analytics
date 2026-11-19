@@ -1,0 +1,301 @@
+customer_id,customer_name,segment,region,city
+1,Customer 001,Corporate,West,Bengaluru
+2,Customer 002,Consumer,North,Chennai
+3,Customer 003,Small Business,East,Bengaluru
+4,Customer 004,Corporate,EAST,Kolkata
+5,Customer 005,Consumer, west ,Pune
+6,Customer 006,Small Business,EAST,Bengaluru
+7,Customer 007,Corporate,South,Chennai
+8,Customer 008,Corporate,EAST,Kolkata
+9,Customer 009,Consumer,South,Mumbai
+10,Customer 010,Consumer,North,Bengaluru
+11,Customer 011,Consumer,East,Pune
+12,Customer 012,Small Business,East,Kolkata
+13,Customer 013,Corporate,South,Chennai
+14,Customer 014,Small Business,South,Bengaluru
+15,Customer 015,Consumer,South,Hyderabad
+16,Customer 016,Consumer,SOUTH,Hyderabad
+17,Customer 017,Corporate,South,Chennai
+18,Customer 018,Consumer,West,Kolkata
+19,Customer 019,Small Business,South,Kolkata
+20,Customer 020,Corporate,Central,Chennai
+21,Customer 021,Corporate,Central,Pune
+22,Customer 022,Consumer,East,Chennai
+23,Customer 023,Small Business,South,Bengaluru
+24,Customer 024,Small Business,East,Pune
+25,Customer 025,Corporate,WEST,Delhi
+26,Customer 026,Consumer,West,Bengaluru
+27,Customer 027,Consumer,West,Hyderabad
+28,Customer 028,Consumer,East,Bengaluru
+29,Customer 029,Consumer, east ,Mumbai
+30,Customer 030,Corporate,South,Delhi
+31,Customer 031,Corporate,West,Kolkata
+32,Customer 032,Small Business,South,Kolkata
+33,Customer 033,Consumer,West,Bengaluru
+34,Customer 034,Consumer,WEST,Kolkata
+35,Customer 035,Consumer,North,Pune
+36,Customer 036,Consumer,East,Delhi
+37,Customer 037,Consumer,NORTH,Hyderabad
+38,Customer 038,Consumer,WEST,Hyderabad
+39,Customer 039,Consumer,North,Delhi
+40,Customer 040,Corporate,Central,Hyderabad
+41,Customer 041,Consumer,North,Chennai
+42,Customer 042,Small Business,Central,Kolkata
+43,Customer 043,Corporate,WEST,Bengaluru
+44,Customer 044,Consumer,EAST,Chennai
+45,Customer 045,Small Business,West,Bengaluru
+46,Customer 046,Small Business,West,Bengaluru
+47,Customer 047,Consumer,Central,Bengaluru
+48,Customer 048,Consumer,South,Chennai
+49,Customer 049,Corporate,EAST,Delhi
+50,Customer 050,Consumer,North,Bengaluru
+51,Customer 051,Consumer,East,Mumbai
+52,Customer 052,Consumer,North,Delhi
+53,Customer 053,Corporate,East,Hyderabad
+54,Customer 054,Corporate,East,Kolkata
+55,Customer 055,Corporate,East,Pune
+56,Customer 056,Corporate,East,Hyderabad
+57,Customer 057,Consumer,West,Mumbai
+58,Customer 058,Corporate,West,Chennai
+59,Customer 059,Consumer,East,Chennai
+60,Customer 060,Consumer,East,Kolkata
+61,Customer 061,Corporate, central ,Mumbai
+62,Customer 062,Consumer,North,Bengaluru
+63,Customer 063,Corporate,NORTH,Chennai
+64,Customer 064,Corporate,North,Kolkata
+65,Customer 065,Corporate,West,Mumbai
+66,Customer 066,Corporate,East,Hyderabad
+67,Customer 067,Corporate,West,Hyderabad
+68,Customer 068,Consumer, west ,Delhi
+69,Customer 069,Consumer,South,Bengaluru
+70,Customer 070,Consumer,West,Hyderabad
+71,Customer 071,Consumer,West,Delhi
+72,Customer 072,Consumer,South,Hyderabad
+73,Customer 073,Small Business,South,Bengaluru
+74,Customer 074,Consumer, south ,Pune
+75,Customer 075,Consumer,North,Kolkata
+76,Customer 076,Consumer,North,Pune
+77,Customer 077,Consumer,CENTRAL,Pune
+78,Customer 078,Corporate,East,Kolkata
+79,Customer 079,Corporate,South,Hyderabad
+80,Customer 080,Corporate,WEST,Bengaluru
+81,Customer 081,Corporate,East,Kolkata
+82,Customer 082,Consumer,Central,Kolkata
+83,Customer 083,Small Business,WEST,Delhi
+84,Customer 084,Consumer,East,Kolkata
+85,Customer 085,Consumer,SOUTH,Delhi
+86,Customer 086,Consumer,Central,Hyderabad
+87,Customer 087,Corporate,West,Bengaluru
+88,Customer 088,Consumer,Central,Mumbai
+89,Customer 089,Consumer,North,Hyderabad
+90,Customer 090,Corporate,West,Pune
+91,Customer 091,Consumer,East,Mumbai
+92,Customer 092,Corporate,North,Bengaluru
+93,Customer 093,Consumer,East,Chennai
+94,Customer 094,Consumer,West,Hyderabad
+95,Customer 095,Consumer,North,Bengaluru
+96,Customer 096,Corporate,East,Chennai
+97,Customer 097,Consumer,West,Mumbai
+98,Customer 098,Consumer,South,Pune
+99,Customer 099,Consumer,East,Chennai
+100,Customer 100,Small Business,East,Hyderabad
+101,Customer 101,Small Business,South,Kolkata
+102,Customer 102,Corporate,Central,Delhi
+103,Customer 103,Consumer,West,Pune
+104,Customer 104,Small Business,North,Bengaluru
+105,Customer 105,Corporate,CENTRAL,Pune
+106,Customer 106,Corporate,West,Pune
+107,Customer 107,Consumer,South,Mumbai
+108,Customer 108,Consumer,West,Mumbai
+109,Customer 109,Consumer,North,Delhi
+110,Customer 110,Small Business,Central,Kolkata
+111,Customer 111,Consumer,West,Chennai
+112,Customer 112,Consumer,West,Delhi
+113,Customer 113,Consumer,North,Kolkata
+114,Customer 114,Corporate,West,Kolkata
+115,Customer 115,Consumer,North,Bengaluru
+116,Customer 116,Small Business,South,Delhi
+117,Customer 117,Corporate,North,Pune
+118,Customer 118,Corporate,West,Pune
+119,Customer 119,Consumer,North,Chennai
+120,Customer 120,Corporate,Central,Delhi
+121,Customer 121,Corporate,West,Hyderabad
+122,Customer 122,Corporate, north ,Mumbai
+123,Customer 123,Consumer,NORTH,Chennai
+124,Customer 124,Consumer,North,Bengaluru
+125,Customer 125,Consumer,East,Bengaluru
+126,Customer 126,Consumer,West,Mumbai
+127,Customer 127,Consumer, south ,Pune
+128,Customer 128,Consumer,West,Hyderabad
+129,Customer 129,Consumer,North,Pune
+130,Customer 130,Corporate,West,Delhi
+131,Customer 131,Consumer,Central,Chennai
+132,Customer 132,Small Business,West,Kolkata
+133,Customer 133,Corporate,West,Delhi
+134,Customer 134,Consumer,West,Kolkata
+135,Customer 135,Corporate,North,Chennai
+136,Customer 136,Consumer,South,Bengaluru
+137,Customer 137,Small Business,North,Pune
+138,Customer 138,Consumer,EAST,Delhi
+139,Customer 139,Corporate,WEST,Kolkata
+140,Customer 140,Consumer,East,Delhi
+141,Customer 141,Consumer, west ,Chennai
+142,Customer 142,Consumer,North,Hyderabad
+143,Customer 143,Small Business,West,Hyderabad
+144,Customer 144,Corporate,NORTH,Pune
+145,Customer 145,Consumer,South,Mumbai
+146,Customer 146,Consumer,WEST,Bengaluru
+147,Customer 147,Consumer,Central,Kolkata
+148,Customer 148,Corporate,East,Pune
+149,Customer 149,Consumer,North,Kolkata
+150,Customer 150,Consumer,East,Pune
+151,Customer 151,Small Business,NORTH,Hyderabad
+152,Customer 152,Small Business,West,Delhi
+153,Customer 153,Consumer,West,Chennai
+154,Customer 154,Corporate,North,Bengaluru
+155,Customer 155,Consumer,North,Mumbai
+156,Customer 156,Corporate,North,Chennai
+157,Customer 157,Consumer,Central,Delhi
+158,Customer 158,Corporate,East,Hyderabad
+159,Customer 159,Corporate,West,Hyderabad
+160,Customer 160,Corporate,East,Delhi
+161,Customer 161,Consumer,East,Hyderabad
+162,Customer 162,Small Business,North,Hyderabad
+163,Customer 163,Consumer,Central,Delhi
+164,Customer 164,Consumer,South,Mumbai
+165,Customer 165,Corporate,East,Chennai
+166,Customer 166,Consumer,West,Hyderabad
+167,Customer 167,Small Business,East,Delhi
+168,Customer 168,Small Business,Central,Chennai
+169,Customer 169,Consumer,NORTH,Bengaluru
+170,Customer 170,Small Business,East,Pune
+171,Customer 171,Consumer,East,Bengaluru
+172,Customer 172,Corporate,East,Delhi
+173,Customer 173,Consumer,North,Chennai
+174,Customer 174,Small Business,North,Delhi
+175,Customer 175,Consumer,South,Bengaluru
+176,Customer 176,Consumer,South,Bengaluru
+177,Customer 177,Consumer,East,Bengaluru
+178,Customer 178,Small Business,EAST,Kolkata
+179,Customer 179,Small Business,East,Chennai
+180,Customer 180,Corporate,East,Chennai
+181,Customer 181,Small Business,East,Bengaluru
+182,Customer 182,Small Business,South,Mumbai
+183,Customer 183,Corporate,EAST,Delhi
+184,Customer 184,Consumer,South,Bengaluru
+185,Customer 185,Corporate, north ,Delhi
+186,Customer 186,Corporate,East,Mumbai
+187,Customer 187,Consumer,East,Chennai
+188,Customer 188,Consumer,South,Delhi
+189,Customer 189,Corporate,East,Bengaluru
+190,Customer 190,Consumer,East,Bengaluru
+191,Customer 191,Small Business,West,Delhi
+192,Customer 192,Consumer, east ,Chennai
+193,Customer 193,Consumer,West,Bengaluru
+194,Customer 194,Small Business,South,Kolkata
+195,Customer 195,Consumer,West,Mumbai
+196,Customer 196,Consumer,East,Pune
+197,Customer 197,Corporate,East,Pune
+198,Customer 198,Small Business,East,Pune
+199,Customer 199,Consumer,SOUTH,Hyderabad
+200,Customer 200,Consumer,East,Delhi
+201,Customer 201,Corporate,West,Kolkata
+202,Customer 202,Small Business,West,Mumbai
+203,Customer 203,Corporate,Central,Delhi
+204,Customer 204,Consumer,East,Delhi
+205,Customer 205,Consumer,East,Mumbai
+206,Customer 206,Consumer,West,Mumbai
+207,Customer 207,Consumer,South,Delhi
+208,Customer 208,Corporate,West,Bengaluru
+209,Customer 209,Consumer,EAST,Hyderabad
+210,Customer 210,Corporate,North,Mumbai
+211,Customer 211,Corporate,North,Hyderabad
+212,Customer 212,Corporate,West,Chennai
+213,Customer 213,Consumer,North,Mumbai
+214,Customer 214,Small Business, south ,Kolkata
+215,Customer 215,Corporate,South,Pune
+216,Customer 216,Corporate,North,Kolkata
+217,Customer 217,Consumer,South,Pune
+218,Customer 218,Consumer,West,Chennai
+219,Customer 219,Small Business,North,Bengaluru
+220,Customer 220,Consumer, west ,Chennai
+221,Customer 221,Consumer,West,Bengaluru
+222,Customer 222,Consumer,South,Bengaluru
+223,Customer 223,Corporate,North,Pune
+224,Customer 224,Small Business,EAST,Pune
+225,Customer 225,Consumer,North,Mumbai
+226,Customer 226,Small Business,South,Kolkata
+227,Customer 227,Consumer,Central,Pune
+228,Customer 228,Corporate,Central,Bengaluru
+229,Customer 229,Corporate,WEST,Mumbai
+230,Customer 230,Consumer,South,Kolkata
+231,Customer 231,Consumer,West,Chennai
+232,Customer 232,Consumer,West,Mumbai
+233,Customer 233,Small Business, south ,Mumbai
+234,Customer 234,Corporate,East,Chennai
+235,Customer 235,Small Business,NORTH,Delhi
+236,Customer 236,Small Business,SOUTH,Hyderabad
+237,Customer 237,Consumer,EAST,Delhi
+238,Customer 238,Corporate,North,Pune
+239,Customer 239,Consumer,North,Delhi
+240,Customer 240,Consumer,WEST,Bengaluru
+241,Customer 241,Small Business, central ,Kolkata
+242,Customer 242,Corporate,East,Chennai
+243,Customer 243,Consumer,West,Bengaluru
+244,Customer 244,Corporate,Central,Chennai
+245,Customer 245,Corporate,North,Hyderabad
+246,Customer 246,Small Business,EAST,Hyderabad
+247,Customer 247,Corporate,South,Bengaluru
+248,Customer 248,Consumer,North,Bengaluru
+249,Customer 249,Consumer,West,Kolkata
+250,Customer 250,Consumer,EAST,Hyderabad
+251,Customer 251,Corporate,East,Delhi
+252,Customer 252,Small Business,North,Hyderabad
+253,Customer 253,Consumer,North,Hyderabad
+254,Customer 254,Consumer,CENTRAL,Mumbai
+255,Customer 255,Consumer,North,Pune
+256,Customer 256,Corporate,South,Hyderabad
+257,Customer 257,Small Business,South,Bengaluru
+258,Customer 258,Consumer, east ,Chennai
+259,Customer 259,Consumer,East,Mumbai
+260,Customer 260,Corporate,East,Chennai
+261,Customer 261,Consumer,North,Kolkata
+262,Customer 262,Small Business,South,Delhi
+263,Customer 263,Consumer,WEST,Hyderabad
+264,Customer 264,Consumer,East,Hyderabad
+265,Customer 265,Small Business,East,Kolkata
+266,Customer 266,Consumer,WEST,Hyderabad
+267,Customer 267,Consumer,West,Pune
+268,Customer 268,Consumer,NORTH,Delhi
+269,Customer 269,Consumer,South,Kolkata
+270,Customer 270,Consumer,East,Hyderabad
+271,Customer 271,Consumer,SOUTH,Bengaluru
+272,Customer 272,Consumer, west ,Pune
+273,Customer 273,Consumer,East,Chennai
+274,Customer 274,Corporate,West,Mumbai
+275,Customer 275,Corporate,WEST,Bengaluru
+276,Customer 276,Consumer,East,Delhi
+277,Customer 277,Consumer,Central,Chennai
+278,Customer 278,Corporate,East,Delhi
+279,Customer 279,Small Business,West,Mumbai
+280,Customer 280,Small Business,South,Delhi
+281,Customer 281,Consumer,EAST,Mumbai
+282,Customer 282,Consumer,East,Hyderabad
+283,Customer 283,Consumer,North,Delhi
+284,Customer 284,Consumer,South,Hyderabad
+285,Customer 285,Corporate,CENTRAL,Delhi
+286,Customer 286,Consumer,East,Bengaluru
+287,Customer 287,Consumer,NORTH,Mumbai
+288,Customer 288,Consumer,South,Hyderabad
+289,Customer 289,Corporate,North,Hyderabad
+290,Customer 290,Consumer,NORTH,Chennai
+291,Customer 291,Small Business,Central,Mumbai
+292,Customer 292,Consumer,EAST,Chennai
+293,Customer 293,Small Business,South,Hyderabad
+294,Customer 294,Consumer,East,Delhi
+295,Customer 295,Small Business,North,Delhi
+296,Customer 296,Small Business,SOUTH,Chennai
+297,Customer 297,Small Business,West,Chennai
+298,Customer 298,Small Business,East,Kolkata
+299,Customer 299,Corporate,Central,Chennai
+300,Customer 300,Corporate, east ,Kolkata

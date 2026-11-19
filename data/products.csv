@@ -1,0 +1,12 @@
+product_id,category,product_name,unit_price,unit_cost
+1,Technology,Laptop,900,650
+2,Technology,Smartphone,600,420
+3,Technology,Monitor,250,170
+4,Technology,Headset,80,45
+5,Furniture,Office Chair,220,140
+6,Furniture,Standing Desk,480,330
+7,Furniture,Bookcase,150,95
+8,Office Supplies,Notebook Pack,20,9
+9,Office Supplies,Printer Paper,35,22
+10,Office Supplies,Pen Set,15,6
+11,Office Supplies,Binder,12,5

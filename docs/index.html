@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sales Performance Analytics Dashboard 2025</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#f3f5f7;--card:#fff;--ink:#14212b;--mute:#5d6b76;--line:#dde3e8;--a:#0e6e6e;--b:#e0a100;--c:#3b5b92;--d:#b4493a;--e:#7a8b99}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1a21;--card:#17252e;--ink:#e8eef2;--mute:#95a5b1;--line:#27383f;--a:#3fb8b0;--b:#f0b93a;--c:#7ea3e0;--d:#e5806f;--e:#8fa0ad}}
+*{box-sizing:border-box}html{padding-top:env(safe-area-inset-top,0)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Instrument Sans",system-ui,sans-serif}
+header,main{max-width:1180px;margin:0 auto;padding:0 20px}
+header{padding-top:32px;padding-bottom:8px;display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px}
+h1{font:600 30px/1.15 Fraunces,Georgia,serif;margin:0}
+.sub{color:var(--mute);margin:4px 0 0}
+select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font:inherit}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.kpi b{display:block;font:600 28px/1.2 Fraunces,Georgia,serif}.kpi span{color:var(--mute);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;padding-bottom:40px}
+.w8{grid-column:span 8}.w4{grid-column:span 4}.w6{grid-column:span 6}
+h2{font-size:15px;margin:0 0 10px;font-weight:600}
+canvas{max-height:300px}
+table{width:100%;border-collapse:collapse}td,th{padding:7px 4px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--mute);font-weight:500}td:last-child,th:last-child{text-align:right}
+@media(max-width:800px){.w8,.w4,.w6{grid-column:span 12}}
+</style></head><body>
+<header><div><h1>Sales Performance Analytics 2025</h1><p class="sub">Revenue, profit, customers and regional performance</p></div>
+</header>
+<main>
+<section class="kpis" id="kpis"></section>
+<div class="grid">
+<div class="card w8"><h2>Monthly revenue and profit</h2><canvas id="trend"></canvas></div>
+<div class="card w4"><h2>Revenue by category</h2><canvas id="cat"></canvas></div>
+<div class="card w6"><h2>Revenue and margin by region</h2><canvas id="reg"></canvas></div>
+<div class="card w6"><h2>Top 10 customers</h2><table id="top"></table></div>
+</div></main>
+<script src="data.js"></script>
+<script>
+const D=window.DASH, css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const money=v=>"₹"+Math.round(v).toLocaleString("en-IN"), fmt=v=>v>=1e7?"₹"+(v/1e7).toFixed(2)+" Cr":v>=1e5?"₹"+(v/1e5).toFixed(2)+" L":money(v);
+const k=D.kpis;
+document.getElementById("kpis").innerHTML=[["Revenue",fmt(k.revenue)],["Profit",fmt(k.profit)],["Profit margin",k.margin_pct+"%"],["Orders",k.orders.toLocaleString("en-IN")],["Avg order value",money(k.avg_order_value)]]
+ .map(([l,v])=>`<div class="card kpi"><b>${v}</b><span>${l}</span></div>`).join("");
+document.getElementById("top").innerHTML="<tr><th>Customer</th><th>Segment</th><th>Revenue</th></tr>"+D.top_customers.map(r=>`<tr><td>${r.customer_name}</td><td>${r.segment}</td><td>${money(r.revenue)}</td></tr>`).join("");
+let charts=[];
+function draw(){
+ charts.forEach(c=>c.destroy());Chart.defaults.color=css("--mute");Chart.defaults.borderColor=css("--line");Chart.defaults.font.family="Instrument Sans";
+ const A=css("--a"),B=css("--b");
+ charts=[
+  new Chart("trend",{type:"line",data:{labels:D.monthly.map(m=>m.month),datasets:[{label:"Revenue",data:D.monthly.map(m=>m.revenue),borderColor:A,backgroundColor:A,tension:.3},{label:"Profit",data:D.monthly.map(m=>m.profit),borderColor:B,backgroundColor:B,tension:.3}]},options:{plugins:{legend:{position:"bottom"}},scales:{y:{ticks:{callback:v=>fmt(v)}}}}}),
+  new Chart("cat",{type:"doughnut",data:{labels:D.category.map(c=>c.category),datasets:[{data:D.category.map(c=>c.revenue),backgroundColor:[css("--a"),css("--b"),css("--c")],borderWidth:0}]},options:{plugins:{legend:{position:"bottom"},tooltip:{callbacks:{label:c=>c.label+": "+fmt(c.raw)}}}}}),
+  new Chart("reg",{data:{labels:D.region.map(r=>r.region),datasets:[{type:"bar",label:"Revenue",data:D.region.map(r=>r.revenue),backgroundColor:css("--c"),yAxisID:"y"},{type:"line",label:"Margin %",data:D.region.map(r=>r.margin_pct),borderColor:css("--d"),backgroundColor:css("--d"),yAxisID:"y1"}]},options:{plugins:{legend:{position:"bottom"}},scales:{y:{ticks:{callback:v=>fmt(v)}},y1:{position:"right",grid:{drawOnChartArea:false},ticks:{callback:v=>v+"%"}}}}})];
+}
+draw();matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
+</script></body></html>
